@@ -35,20 +35,20 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <i class="fa-solid fa-list fa-xs" style="color: #424243;"></i>
+                                <i class="fa-solid fa-list fa-lg" style="color: #424243;"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="fa-solid fa-circle-question fa-xs" style="color: #424243;"></i>
+                                <i class="fa-solid fa-circle-question fa-lg" style="color: #424243;"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical fa-xs"
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical fa-lg"
                                     style="color: #424243;"></i></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-bell fa-xs"
+                            <a class="nav-link" href="#"><i class="fa-solid fa-bell fa-lg"
                                     style="color: #ff8f00;"></i></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -108,32 +108,95 @@
             <div class="container-fluid">
                 <div class="row">
                     <div
-                        class="col-12 col-sm-4 d-flex mt-4 order-1 order-sm-3 justify-content-sm-end align-items-center">
-                        <h6 class="text-light">Nuovo studente</h6>
+                        class="col-12 col-sm-4 col-lg-3 d-flex mt-4 pe-5 order-1 order-sm-3 justify-content-sm-end align-items-start">
+                        <h6 class="text-light pt-2">Nuovo studente</h6>
                         <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                ...
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Nome</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Cognome</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                      </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                      </div>
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Indirizzzo Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Scegli</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFileSm" class="form-label">Foto</label>
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                      </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                         Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4  mt-4 order-2 order-sm-1 align-items-center">
+                    <div class="col-12 col-sm-4 col-lg-6 mt-4 order-2 order-sm-1 align-items-center">
                         <h4 class="text-light d-inline">Boolean</h4>
                         <span class="badge rounded-pill bg_pillt ">Piano Blaze</span>
                         <div class="row-not-flex">
                             <span class="badge rounded-pill bg_pillt ">3 app</span>
                             <i class="fa-solid fa-angles-right fa-sm" style="color: #ffffff;"></i>
                             <button type="button" class="btn rounded-circle bg_pillt plus">+</button>
+                            <span class="badge rounded-pill bg_pillt app_badge">Boolean mobile app</span>
+                            <span class="badge rounded-pill bg_pillt app_badge">Boolean web app</span>
+                            <span class="badge rounded-pill bg_pillt app_badge">Boolean blog app</span>
                         </div>
                     </div>
-                    <div class="col-12  col-sm-4 mt-4 order-3 order-sm-2 justify-content-sm-center align-items-center">
+                    <div class="col-12  col-sm-4 col-lg-3 mt-4 order-3 order-sm-2 justify-content-sm-center align-items-center">
                         <h6 class="text-light">Studenti online negli ultimi 30 minuti</h6>
                         <h4 class="text-light">125</h4>
                     </div>
