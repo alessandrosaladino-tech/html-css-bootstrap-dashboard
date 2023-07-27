@@ -55,6 +55,7 @@
 /*main top*/
 .bool_info {
     height: 250px;
+    width: calc(100% - 200px);
 }
 
 .app_badge {

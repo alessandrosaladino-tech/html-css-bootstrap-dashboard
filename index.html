@@ -104,106 +104,565 @@
         <!--End Sidebar-->
 
         <!--Main top-->
-        <section class="bool_info w-100 bg_tmain">
-            <div class="container-fluid">
-                <div class="row">
-                    <div
-                        class="col-12 col-sm-4 col-lg-3 d-flex mt-4 pe-5 order-1 order-sm-3 justify-content-sm-end align-items-start">
-                        <h6 class="text-light pt-2">Nuovo studente</h6>
-                        <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <form class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Nome</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
-                                      </div>
-                                      <div class="col-md-6">
-                                        <label for="inputPassword4" class="form-label">Cognome</label>
-                                        <input type="password" class="form-control" id="inputPassword4">
-                                      </div>
-                                    <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
-                                      </div>
-                                      <div class="col-md-6">
-                                        <label for="inputPassword4" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4">
-                                      </div>
-                                    <div class="col-md-6">
-                                      <label for="inputEmail4" class="form-label">Indirizzzo Email</label>
-                                      <input type="email" class="form-control" id="inputEmail4">
-                                    </div>
-                                    <div class="col-md-6">
-                                      <label for="inputPassword4" class="form-label">Password</label>
-                                      <input type="password" class="form-control" id="inputPassword4">
-                                    </div>
-                                    <div class="col-12">
-                                      <label for="inputAddress" class="form-label">Indirizzo</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="">
-                                    </div>
-                                    <div class="col-md-6">
-                                      <label for="inputCity" class="form-label">Città</label>
-                                      <input type="text" class="form-control" id="inputCity">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <label for="inputState" class="form-label">Stato</label>
-                                      <select id="inputState" class="form-select">
-                                        <option selected>Scegli</option>
-                                        <option>...</option>
-                                      </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                      <label for="inputZip" class="form-label">CAP</label>
-                                      <input type="text" class="form-control" id="inputZip">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="formFileSm" class="form-label">Foto</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                      </div>
-                                    <div class="col-12">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">
-                                         Seleziona per proseguire
-                                        </label>
-                                      </div>
-                                    </div>
-                                    <div class="col-12">
-                                      <button type="submit" class="btn btn-primary">Salva</button>
-                                      <button type="button" class="btn btn-warning">Svuota</button>
-                                    </div>
-                                  </form>
+        <div class="main_center d-flex flex-column w-100">
+            <section class="bool_info w-100 bg_tmain">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-sm-4 col-lg-3 d-flex mt-4 pe-5 order-1 order-sm-3 justify-content-sm-end align-items-start">
+                            <h6 class="text-light pt-2">Nuovo studente</h6>
+                            <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Nome</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Cognome</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Indirizzzo Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Scegli</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFileSm" class="form-label">Foto</label>
+                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Seleziona per proseguire
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-6 mt-4 order-2 order-sm-1 align-items-center">
-                        <h4 class="text-light d-inline">Boolean</h4>
-                        <span class="badge rounded-pill bg_pillt ">Piano Blaze</span>
-                        <div class="row-not-flex">
-                            <span class="badge rounded-pill bg_pillt ">3 app</span>
-                            <i class="fa-solid fa-angles-right fa-sm" style="color: #ffffff;"></i>
-                            <button type="button" class="btn rounded-circle bg_pillt plus">+</button>
-                            <span class="badge rounded-pill bg_pillt app_badge">Boolean mobile app</span>
-                            <span class="badge rounded-pill bg_pillt app_badge">Boolean web app</span>
-                            <span class="badge rounded-pill bg_pillt app_badge">Boolean blog app</span>
+                        <div class="col-12 col-sm-4 col-lg-6 mt-4 order-2 order-sm-1 align-items-center">
+                            <h4 class="text-light d-inline">Boolean</h4>
+                            <span class="badge rounded-pill bg_pillt ">Piano Blaze</span>
+                            <div class="row-not-flex">
+                                <span class="badge rounded-pill bg_pillt ">3 app</span>
+                                <i class="fa-solid fa-angles-right fa-sm" style="color: #ffffff;"></i>
+                                <button type="button" class="btn rounded-circle bg_pillt plus">+</button>
+                                <span class="badge rounded-pill bg_pillt app_badge">Boolean mobile app</span>
+                                <span class="badge rounded-pill bg_pillt app_badge">Boolean web app</span>
+                                <span class="badge rounded-pill bg_pillt app_badge">Boolean blog app</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12  col-sm-4 col-lg-3 mt-4 order-3 order-sm-2 justify-content-sm-center align-items-center">
-                        <h6 class="text-light">Studenti online negli ultimi 30 minuti</h6>
-                        <h4 class="text-light">125</h4>
+                        <div
+                            class="col-12  col-sm-4 col-lg-3 mt-4 order-3 order-sm-2 justify-content-sm-center align-items-center">
+                            <h6 class="text-light">Studenti online negli ultimi 30 minuti</h6>
+                            <h4 class="text-light">125</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End Main top-->
+            </section>
+            <!--End Main top-->
+
+            <!--Main bottom-->
+            <section class="main_bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 pt-2 pe-1 ps-1 pb-2">
+                            <div class="col-xl-12 col-sm-12">
+                                <div class="card rounded-2">
+                                    <div class="card-header">
+                                        <h2>Prossime classi</h2>
+                                    </div>
+                                    <div class="card border-0 p-4">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="col-md-6 col-sm-6 fs-5" scope="col">Nome</th>
+                                                    <th class="col-md-2 d-none d-md-table-cell text-center fs-5"
+                                                        scope="col">Data inizio</th>
+                                                    <th class="col-md-1 d-none d-sm-table-cell text-center fs-5"
+                                                        scope="col">ROI</th>
+                                                    <th class="col-md-1 col-sm-3 text-center fs-5" scope="col">Stato
+                                                    </th>
+                                                    <th class="col-md-2 col-sm-3 text-center fs-5" scope="col">Azioni
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 75
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-success pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            Done
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 76
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">16 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-success pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            Done
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 77
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">17 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-warning pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            process
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 78
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">18 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-success pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            Done
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 79
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">19 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-danger pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            failed
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 80
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">20 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-success pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            Done
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 81
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">21 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-danger pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            failed
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="fw-medium fs-5">
+                                                    <td scope="row">
+                                                        <img class="rounded-circle" width="50px"
+                                                            src="./asset/img/class-avatar.jpg" alt="">
+                                                        Classe 82
+                                                    </td>
+                                                    <td class="text-center d-none d-md-table-cell">22 Feb 2021</td>
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+                                                    <td class="text-center">
+                                                        <span class="bg-success pb-1 ps-1 pe-1 text-white rounded-3">
+                                                            Done
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                        </svg>
+                                                        <svg class="border border-2 fs-1 p-2 rounded-2 border-secondary"
+                                                            xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <style>
+                                                                svg {
+                                                                    fill: #6c757d
+                                                                }
+                                                            </style>
+                                                            <path
+                                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-sm-12">
+                                <div class="card rounded-2 mt-4">
+                                    <div class="card-header">
+                                        <h2>F.A.Q.</h2>
+                                    </div>
+                                    <div class="accordion accordion-flush p-4" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-medium fs-5" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body fw-medium fs-5">
+                                                    Clicca sul + in alto nella sezione blu.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-medium fs-5" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body fw-medium fs-5">
+                                                    Clicca sull'icona della campanella.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-medium fs-5" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body fw-medium fs-5">
+                                                    Assolutamente si.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 pt-2 pe-1 ps-1 pb-2">
+                            <div class="col-xl-12 col-sm-12">
+                                <div class="card rounded-2">
+                                    <div class="card-header">
+                                        <h2>Todo</h2>
+                                    </div>
+                                    <div class="card p-4 rounded-2 border-0">
+                                        <div class="card">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item fw-medium">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                    Kickoff nuove classi
+                                                </li>
+                                                <li class="list-group-item fw-medium">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                    Lezione su Bootstrap 5 in classe #75
+                                                </li>
+                                                <li class="list-group-item fw-medium">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                    Controllare username github studenti
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-sm-12">
+                                <div class="card p-4 rounded-2">
+                                    <div class="card rounded-2">
+                                        <img src="./assets/img/stats.jpeg" class="card-img-top rounded-2" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-3">Utenti attivi</h5>
+                                            <p class="card-text fw-medium fs-5">Lista degli utenti attivi in piattaforma
+                                                nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item fw-bold">Gennaio: 1200</li>
+                                            <li class="list-group-item fw-bold">Febbraio: 800</li>
+                                            <li class="list-group-item fw-bold">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
     </main>
     <!--End Main-->
 
