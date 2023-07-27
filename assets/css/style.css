@@ -12,13 +12,21 @@
     background-color: white;
 }
 
+.bg_tmain {
+    background-color: var(--ms-primary);
+}
+
 /*end utility*/
+
+
+
 
 /*MAIN*/
 
 /*sidebar*/
 .sidebar {
     width: 150px;
+    flex: 1 ;
     height: calc(100vh - 58px);
     background-color: var(--sp-sidebar);
     color: var(--sp-white);
@@ -35,9 +43,14 @@
      
 }
 /*end sidebar*/
+.bool_info {
+    height: 110px;
+}
+/*main top*/
 
 
 
+/*MEDIA*/
 
 @media screen and (max-width: 990px) {
     .nav-link {
@@ -48,7 +61,7 @@
         display: none;
     }
     .sidebar {
-        width: 50px;
+        flex:0 ;
         height: calc(100vh - 56px);
     }
 
@@ -70,3 +83,5 @@
 
    
 }
+
+/*END MEDIA*/
