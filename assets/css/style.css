@@ -1,0 +1,72 @@
+/*utility*/
+:root {
+    --ms-primary: #1b72e8;
+    --ms-search: #e5e5e5;
+}
+
+.bg_search {
+    background-color: var(--ms-search);
+}
+
+.bg_white {
+    background-color: white;
+}
+
+/*end utility*/
+
+/*MAIN*/
+
+/*sidebar*/
+.sidebar {
+    width: 150px;
+    height: calc(100vh - 58px);
+    background-color: var(--sp-sidebar);
+    color: var(--sp-white);
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 200px;
+    background-image: url(../img/sidebar-bg.png);
+    background-position: center;
+    background-color: #051e34;
+}
+
+.col-12>span {
+     color: white;
+     
+}
+/*end sidebar*/
+
+
+
+
+@media screen and (max-width: 990px) {
+    .nav-link {
+        display: inline-block;
+    }
+
+    .navbar-brand>:nth-child(2) {
+        display: none;
+    }
+    .sidebar {
+        width: 50px;
+        height: calc(100vh - 56px);
+    }
+
+    .sidebar .col-12>span {
+        display: none;
+    }
+
+    .sidebar .container>.row{
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width:990px) {
+    .navbar-brand>:first-child {
+        display: none;
+    }
+
+   
+}

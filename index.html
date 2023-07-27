@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Dashboard</title>
+</head>
+
+<body class="debug">
+    <!--Header-->
+    <header id="site_header">
+        <nav class="navbar navbar-expand-lg navbar-light bg_white ">
+            <div class="container-fluid flex-nowrap">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/mobile-logo.png" alt="Bootstrap" width="30" height="24">
+                    <img src="./assets/img/logo.svg" alt="">
+                </a>
+                <form class="d-flex w-100 " role="search">
+                    <div class="input-group flex-nowrap ">
+                        <span class="input-group-text border-end-0 bg_search" id="addon-wrapping"><i
+                                class="fa-solid fa-magnifying-glass fa-2xs" style="color: #92959b;"></i></span>
+                        <input type="text" class="form-control border-start-0 bg_search"
+                            placeholder="Prova a cercare:Lezioni di Laravel" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                    </div>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-list fa-xs" style="color: #424243;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question fa-xs" style="color: #424243;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical fa-xs"
+                                    style="color: #424243;"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-bell fa-xs"
+                                    style="color: #ff8f00;"></i></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        </nav>
+
+    </header>
+    <!--End Header-->
+
+
+
+    <!--Main-->
+    <main id="site_main">
+
+        <div class="sidebar d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 m-2 mt-4">
+                        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
+                        <span class="ms-1">Home</span>
+                    </div>
+                    <div class="col-12  align-items-start ps-3 m-2">
+                        <i class="fa-solid fa-chart-simple fa-lg" style="color: #ffffff;"></i>
+                        <span class="ms-2">Stats</span>
+                    </div>
+                    <div class="col-12 m-2">
+                        <i class="fa-solid fa-signal fa-lg" style="color: #ffffff;"></i>
+                        <span class="ms-1">Signals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  align-items-start m-2">
+                        <i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></i>
+                        <span class="ms-1">Admin</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--End Main-->
+
+</body>
+
+</html>
