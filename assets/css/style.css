@@ -16,6 +16,15 @@
     background-color: var(--ms-primary);
 }
 
+.bg_pillt{
+    background-color: #165bba;
+    color: white;
+}
+
+.h_25 {
+    height: 25px;
+}
+
 /*end utility*/
 
 
@@ -26,13 +35,11 @@
 /*sidebar*/
 .sidebar {
     width: 150px;
-    flex: 1 ;
     height: calc(100vh - 58px);
     background-color: var(--sp-sidebar);
     color: var(--sp-white);
     flex-direction: column;
-    justify-content: space-between;
-    flex: 0 0 200px;
+    justify-content: space-between;;
     background-image: url(../img/sidebar-bg.png);
     background-position: center;
     background-color: #051e34;
@@ -44,7 +51,7 @@
 }
 /*end sidebar*/
 .bool_info {
-    height: 110px;
+    height: 250px;
 }
 /*main top*/
 
@@ -61,7 +68,7 @@
         display: none;
     }
     .sidebar {
-        flex:0 ;
+        width: 50px;
         height: calc(100vh - 56px);
     }
 
@@ -81,7 +88,12 @@
         display: none;
     }
 
-   
+}
+
+@media screen and (min-width:580px) {
+    .bool_info {
+        height: 110px;
+       }
 }
 
 /*END MEDIA*/
