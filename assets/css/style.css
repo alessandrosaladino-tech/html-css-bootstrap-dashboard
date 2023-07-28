@@ -29,17 +29,22 @@
     width: 30px;
 }
 
+.h_58 {
+    height: 58px;
+}
 /*end utility*/
 
 
 
 
 /*MAIN*/
-
+#site_header {
+    height: 58px;
+}
 /*sidebar*/
 .sidebar {
     width: 150px;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 58px);
     background-color: var(--sp-sidebar);
     color: var(--sp-white);
     flex-direction: column;
@@ -67,7 +72,7 @@
 }
 
 .main_center {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 58px);
     flex: 1;
     overflow: auto;
 }
