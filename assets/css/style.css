@@ -39,7 +39,7 @@
 /*sidebar*/
 .sidebar {
     width: 150px;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 55px);
     background-color: var(--sp-sidebar);
     color: var(--sp-white);
     flex-direction: column;
@@ -74,7 +74,11 @@
 
 /*end main*/
 
+/*hover effects*/
 
+.sidebar .container .row>.col-12:hover {
+    background-color: rgba(255, 255, 255, 0.364);
+}
 
 /*MEDIA*/
 
@@ -91,7 +95,7 @@
         height: calc(100vh - 56px);
     }
 
-    .sidebar .col-12>span {
+    .sidebar .container .row .col-12 a>span {
         display: none;
     }
 
